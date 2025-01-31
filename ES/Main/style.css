@@ -884,6 +884,7 @@ body {
 }
 .swiper {
   width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -892,12 +893,13 @@ body {
   overflow: hidden;
 }
 .swiper-wrapper {
-  width: 100%;
+  width: 100% !important;
   display: flex;
+  position: relative;
 }
 .swiper-slide {
   display: flex;
-  gap: 20px;
+  flex-shrink: 0;
 }
 
 .slider__card {
@@ -926,9 +928,9 @@ body {
   color: rgba(255, 254, 247, 1);
 }
 .card__img {
-  width: 630px;
-  height: 335px;
-
+  max-width: 630px;
+  width: 100%;
+  min-height: 335px;
   border-radius: 30px;
   object-fit: cover;
 }
