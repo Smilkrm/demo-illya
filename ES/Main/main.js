@@ -402,6 +402,7 @@ function handleMediaChange() {
 </div>
     `;
   } else if (window.innerWidth <= 1400) {
+    document.querySelector("");
   } else {
   }
 }
